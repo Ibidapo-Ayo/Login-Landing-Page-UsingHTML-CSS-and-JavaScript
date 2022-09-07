@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: auto;
+   
+}
+.container .left-panel{
+    width: 40%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(235, 106, 20, 0.5), rgba(41, 46, 145, .5)), url("../art.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px;
+}
+.container .left-panel .frontpage{
+    position: relative;
+}
+.container .left-panel h3{
+    font-size: 70px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+.container .left-panel h3::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: rgb(235, 106, 20);
+    border-radius: 50%;
+    transform: translateY(55px) translateX(230px);
+
+}
+.container .right-panel{
+    width: 60%;
+    height: 100vh;
+    background: #fff;
+    padding: 30px 20px 0px 150px;
+    justify-content: center;
+    align-items: center;
+}
+.container .right-panel .form-container{
+    display: flex;  
+
+}
+.container .right-panel .yet-a-member{ 
+    display: flex; 
+    justify-content: flex-end; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.container .right-panel .yet-a-member p{
+    font-size: 14px;
+}
+/* .google{
+    width: 20px;
+} */
+.container .right-panel .signInWith{
+    margin-top: 100px;
+    width: 100%;
+}
+.container .right-panel .signInWith .logo{
+    width: 200px;
+}
+.container .right-panel .signInWith h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.container .right-panel .signInWith .googleSignin{
+    width: 250px;
+    height: 45px;
+    background: #1A73E8;
+    margin-top: 26px;
+    border-radius: 4px;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container .right-panel .signInWith .googleSignin span{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+.container .right-panel .signInWith .googleSignin .google-icon{
+    align-items: center;
+    background-color: #fff;
+    height: 36px;
+    margin-left: -70px;
+    margin-right: 12px;
+    min-width: 36px;
+    width: 36px;
+    padding: 5px 5px;
+    border-radius: 4px 0px 0px 4px;
+}
+.container .right-panel .signInWith  .twitter{
+    width: 47px;
+    height: 40px;
+    background: #f3f3f4;
+    padding: 10px 16px;
+    display: flex;
+    border-radius: 8px;
+    margin-top: 28px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.divider{
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    color: #6e6d7a;
+    text-align: center;
+    width:  335px;
+    display: block;
+    margin-top: 20px;
+}
+.divider::after{
+    content: 'Or';
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    padding: 0 16px;
+    background: #fff;
+    font: normal 14px/14px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container .right-panel form{
+    width: 335px;
+    height: 200px;
+}
+.container .right-panel form .input .password-show i{
+    position: relative;
+transform: translateX(340px) translateY(-30px);
+font-size: 20px;
+cursor: pointer;
+}
+.container .right-panel form .input{
+   margin: 0 0 12px;
+}
+.container .right-panel form label{
+    display: block; 
+    margin-top: 22px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin: 14px 0 4px;
+}
+.container .right-panel form input{
+    width: 370px;
+    height: 40px;
+    padding: 10px 16px;
+   border-radius: 8px;
+   border: 1px solid transparent;
+   background: #f3f3f4;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: "Roboto", sans-serif;
+}
+.container .right-panel form input:focus{
+  border: 1px solid rgba(26, 115, 232, 0.2);
+  outline: none;
+  transition: 1s;
+}
+.container .right-panel form .btn{
+    width: 200px;
+    padding: 10px 16px;
+    background: rgb(235, 106, 20);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer{
+    width: 100%;
+    height: 400px;
+    background: #060a52;
+}
+
+@media screen and (max-width: 599px){
+    .container{
+        width: 100%;
+    }
+    .container .left-panel{
+        display: none;
+        
+    }
+    .container .right-panel{
+        width: 100%;
+        padding: 0px;
+        padding-left: 10px;
+    }
+    .container .right-panel .yet-a-member{
+        position: relative;
+transform: translateY(600px);
+        justify-content: center;
+        width: 100%;
+    }
+    .container .right-panel .signInWith .logo{
+        margin-left: 90px;
+    }
+    .container .right-panel form .btn{
+        width: 370px;
+    }
+}   
